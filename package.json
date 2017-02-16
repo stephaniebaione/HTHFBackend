@@ -1,0 +1,20 @@
+{
+  "name": "hthf-backend",
+  "version": "1.0.0",
+  "description": "Backend Services for HTHF Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node node-scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephaniebaione/HTHFBackend.git"
+  },
+  "author": "Stephanie Baione",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephaniebaione/HTHFBackend/issues"
+  },
+  "homepage": "https://github.com/stephaniebaione/HTHFBackend#readme"
+}
