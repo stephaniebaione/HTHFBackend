@@ -4,8 +4,7 @@
   "description": "Backend Services for HTHF Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node node-scripts/build.js"
+    "build": "node node-scripts/create-tables.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/stephaniebaione/HTHFBackend/issues"
   },
-  "homepage": "https://github.com/stephaniebaione/HTHFBackend#readme"
+  "homepage": "https://github.com/stephaniebaione/HTHFBackend#readme",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "pg": "^6.1.0"
+  }
 }
