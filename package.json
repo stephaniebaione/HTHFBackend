@@ -4,7 +4,9 @@
   "description": "Backend Services for HTHF Project",
   "main": "index.js",
   "scripts": {
-    "build": "node node-scripts/create-tables.js"
+    "build": "node node-scripts/create-tables.js",
+    "drop-tables": "node node-scripts/drop-tables.js",
+    "list-tables": "node node-scripts/list-tables.js"
   },
   "repository": {
     "type": "git",
