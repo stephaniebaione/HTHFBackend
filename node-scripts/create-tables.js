@@ -33,7 +33,14 @@ client.connect(function (err) {
 function createUsersTable() {
     // assumes that the client is already connected
     // TODO: Create USERS table with correct structure
-    client.query("CREATE TABLE DUMMYUSERSTABLE(DUMMY INT NOT NULL, PRIMARY KEY(DUMMY))", function (err, result) {
+    var createUsersQuery = "CREATE TABLE users("
+        + "HASHEDPASSWORD CHAR NOT NULL, "
+        + "EMAIL CHAR PRIMARY KEY, "
+        + "SENDCHRISTMASLIST DATE NOT NULL, "
+        + "SENDBIRTHDAYLIST DATE NOT NULL, "
+        + "KIDNAME CHAR NOT NULL, "
+        + "BIRTHDAY DATE NOT NULL)";
+    client.query(createUsersQuery, function (err, result) {
 
         if (err) {
             // print error to the console if there was an error
