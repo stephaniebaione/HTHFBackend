@@ -4,6 +4,7 @@
   "description": "Backend Services for HTHF Project",
   "main": "index.js",
   "scripts": {
+    "start": "node node-scripts/main.js",
     "build": "node node-scripts/create-tables.js",
     "drop-tables": "node node-scripts/drop-tables.js",
     "list-tables": "node node-scripts/list-tables.js"
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/stephaniebaione/HTHFBackend#readme",
   "dependencies": {
+    "body-parser": "^1.17.0",
+    "express": "^4.15.0",
     "file-system": "^2.2.2",
     "pg": "^6.1.0"
   }
